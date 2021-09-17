@@ -49,7 +49,11 @@ python manage.py createsuperuser - create super user
 cd /home/warex/PycharmProjects/django-sites/testssite/mysite/ - way to folder
 
 """
-'''-> lesson 21  21 min'''
+'''-> lesson 22
+Создать одностраничный сайт на джанго, 
+Создать простой сайт.
+'''
+
 
 
 
