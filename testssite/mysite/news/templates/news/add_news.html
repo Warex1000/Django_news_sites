@@ -13,9 +13,10 @@
 
 <from action="{% url 'add_news' %}" method="post">
     {% csrf_token %}
-    <!--    {{ form.as_p }}-->
 
-<!--    {{ form.non_field.errors }}
+<!--    {{ form.as_p }}-->
+
+    {{ form.non_field.errors }}
     <div class="form-group">
         <label for="{{ form.title.id_for_label }}">Название: </label>
         {{ form.title }}
@@ -39,7 +40,7 @@
             {{ form.is_published.errors }}
         </div>
     </div>
-<br>
+    <br>
     <div class="form-group">
         <label for="{{ form.category.id_for_label }}">Категория: </label>
         {{ form.category }}
@@ -47,7 +48,7 @@
             {{ form.category.errors }}
         </div>
     </div>
-<br>-->
+    <br>
 
 
     <botton type="submit" class="btn btn-primary btn-block">Добавить новость</botton>
