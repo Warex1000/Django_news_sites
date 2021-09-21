@@ -18,7 +18,7 @@
     {{ form.non_field.errors }}
     <div class="form-group">
         <label for="{{ form.title.id_for_label }}">Название: </label>
-        {{ from.title }}
+        {{ form.title }}
         <div class="invalid-feedback">
             {{ form.title.errors }}
         </div>
@@ -26,7 +26,7 @@
 
     <div class="form-group">
         <label for="{{ form.content.id_for_label }}">Текст: </label>
-        {{ from.content }}
+        {{ form.content }}
         <div class="invalid-feedback">
             {{ form.content.errors }}
         </div>
@@ -34,7 +34,7 @@
 
     <div class="form-group">
         <label for="{{ form.is_published.id_for_label }}">Опубликовать? </label>
-        {{ from.is_published }}
+        {{ form.is_published }}
         <div class="invalid-feedback">
             {{ form.is_published.errors }}
         </div>
@@ -42,7 +42,7 @@
 
     <div class="form-group">
         <label for="{{ form.category.id_for_label }}">Категория: </label>
-        {{ from.category }}
+        {{ form.category }}
         <div class="invalid-feedback">
             {{ form.category.errors }}
         </div>
