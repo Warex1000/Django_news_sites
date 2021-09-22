@@ -11,12 +11,12 @@
 {% block content %}
 <h1>Добавление новости</h1>
 
-<from action="{% url 'add_news' %}" method="post">
+<form action="{% url 'add_news' %}" method="post">
     {% csrf_token %}
 
-<!--    {{ form.as_p }}-->
+    {{ form.as_p }}
 
-    {{ form.non_field.errors }}
+<!--    {{ form.non_field.errors }}
     <div class="form-group">
         <label for="{{ form.title.id_for_label }}">Название: </label>
         {{ form.title }}
@@ -48,9 +48,10 @@
             {{ form.category.errors }}
         </div>
     </div>
-    <br>
+    <br>-->
 
 
-    <botton type="submit" class="btn btn-primary btn-block">Добавить новость</botton>
-</from>
+    <button type="submit" class="btn btn-primary btn-block">Добавить новость</button>
+</form>
+
 {% endblock %}
