@@ -4,7 +4,6 @@ python3 manage.py runserver - runserver
 python3 manage.py runserver - runserver 4000 (port address: 4000)
 python3 manage.py runserver - runserver 1.2.3.4:4000 (ip adress 1.2.3.4, port address: 4000)
 
-python3 manage.py startapp news - do new modul name: news of site
 
 pip install pillow - install for photo models python3 manage.py makemigrations - do migrations from models python3
 manage.py sqlmigrate news 0001 - see the migration request to data base python3 manage.py migrate - after this to do
@@ -49,7 +48,7 @@ python manage.py createsuperuser - create super user
 cd /home/warex/PycharmProjects/django-sites/testssite/mysite/ - way to folder
 
 """
-'''-> lesson 30
+'''-> 
 !!! Docker compose !!!
 !!! React – JavaScript-библиотека !!!
 

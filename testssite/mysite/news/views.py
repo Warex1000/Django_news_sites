@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import News, Category
 from .forms import NewsForm
 from django.views.generic import ListView, DetailView, CreateView
+from django.urls import reverse_lazy
 
 
 class HomeNews(ListView):
@@ -44,6 +45,7 @@ class ViewsNews(DetailView):
 class CreateNews(CreateView):
     form_class = NewsForm
     template_name = 'news/add_news.html'
+    # success_url = reverse_lazy('home')  # Редирект на главную страничку
 
 
 # def index(request):
@@ -78,4 +80,4 @@ def get_category(request, category_id):
 #         form = NewsForm()
 #     return render(request, 'news/add_news.html', {'form': form})
 
-# 3:17 lesson 30
+# lesson 32
