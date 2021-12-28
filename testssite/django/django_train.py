@@ -54,7 +54,6 @@ cd /home/warex/PycharmProjects/django-sites/testssite/mysite/ - way to folder
 !!! React – JavaScript-библиотека !!!
 
 Создать одностраничный сайт на джанго, 
-Создать простой сайт.
 '''
 
 
